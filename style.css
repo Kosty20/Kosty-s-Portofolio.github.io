@@ -38,6 +38,12 @@ section {
 	padding: 50px;
 	border-bottom: 10px solid var(--my-orange);
 }
+h1{
+	font-size: 3rem;
+}
+h2{
+	font-size: 2rem;
+}
 
 nav {
 	width: 100%;
@@ -67,11 +73,8 @@ nav a:hover {
 .welcome {
 	padding: 100px 0;
 }
-.welcome h1 {
-	font-size: 2.5rem;
-}
 .welcome img {
-	margin: 75px;
+	margin: 75px auto;
 	border-radius: 50%;
 	border: 20px solid var(--my-orange);
 }
@@ -80,9 +83,6 @@ nav a:hover {
 	color: var(--my-orange);
 }
 
-.projects h2 {
-	font-size: 2rem;
-}
 .projContainer {
 	margin:50px auto;
 	max-width: 1200px;
@@ -111,6 +111,7 @@ nav a:hover {
 	border-radius: 10px;
 }
 .projContainer > a p {
+	background-color: transparent;
 	padding-top: 10px;
 	font-weight: bold;
 	font-size: large;
@@ -137,7 +138,6 @@ nav a:hover {
 .seeMore:hover {
 	box-shadow: 0 0 0 10px rgb(65, 65, 65);
 }
-
 
 .contact > h2 {
 	font-size: 3rem;
@@ -209,6 +209,29 @@ footer {
 	}
 	.links {
 		flex-direction: column;
+	}
+}
+@media (max-width: 500px){
+
+	nav > a{
+		font-size: 1rem;
+	}
+	.welcome p{
+		font-size: 1rem;
+	}
+	.welcome img {
+		width: 60%;
+		border-width: 10px;
+	}
+	.projects h2{
+		font-size: 1.2rem;
+	}
+	.projContainer > a{
+		border-radius: 20px;
+		border-bottom-left-radius: 5px;
+	}
+	.projContainer > a p{
+		font-size: 0.7rem;
 	}
 }
 
